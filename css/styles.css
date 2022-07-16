@@ -1,0 +1,200 @@
+:root {
+    --primary-text-color: #757575;
+    --headers-text-color: #212121;
+    --bg-color: #ffffff;
+    --sec-bg-color: #F5F4FA;
+    --footer-adr-text: rgba(255, 255, 255, 0.6);
+    --footer-bg: #2F303A;
+    --Logo-bt-link: #2196F3;
+}
+
+body {
+    color:var(--primary-text-color);
+    background-color: var(--bg-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+    
+}
+
+
+/*header*/
+
+.link {
+    text-decoration: none;
+}
+
+.logo {
+    color: var(--Logo-bt-link);
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    
+}
+
+.logo .black {
+    color: black;
+}
+
+.list {
+    list-style-type: none;
+}
+.link.navi {
+    color:var(--headers-text-color);
+    font-weight: 500;
+}
+ 
+.link.navi:hover,
+.link.navi:focus {
+    color: var(--Logo-bt-link);
+}
+.link.navi:active {
+    color: var(--Logo-bt-link);
+}
+.link.kont {
+    color: var(--primary-text-color);
+    font-weight: 500;
+}
+
+.link.kont:hover,
+.link.kont:focus {
+    color: var(--Logo-bt-link);
+}
+
+
+/*main*/
+    /*hero*/
+.hero {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--bg-color);
+}
+
+.btn {
+    color: var(--bg-color);
+    background-color: var(--Logo-bt-link);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    font-family: inherit;   
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #188CE8;
+}
+
+.osobenost {
+    font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    color: var(--headers-text-color);
+}
+ 
+.osobenost-text {
+    font-weight: 400;
+        font-size: 14px;
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+}
+
+.podzagolovok {
+    font-weight: 700;
+        font-size: 36px;
+        line-height: 1.2;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--headers-text-color);
+}
+
+.team {
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 1.2;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--headers-text-color);
+}
+
+.prof {
+    
+        font-size: 16px;
+        line-height: 1.2;
+        text-align: center;
+        letter-spacing: 0.03em;
+}
+
+/* footer*/
+
+.footer {
+    background-color: var(--footer-bg);
+
+}
+
+.logo .white {
+    color:var(--bg-color)
+}
+
+.addr {
+    font-style: normal;
+    color:#ffffff;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+
+.link.addr {
+    color: rgba(255, 255, 255, 0.6);;
+}
+
+
+
+/*для портфолiо сторiнки*/
+
+.btn.port {
+    color: var(--headers-text-color);
+    background-color: var(--sec-bg-color);
+    font-family: inherit;
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 1.6;
+        /* identical to box height, or 162% */
+    
+        text-align: center;
+        letter-spacing: 0.03em;
+
+
+}
+
+.btn.port:hover,
+.btn.port:focus {
+    background-color: var(--Logo-bt-link);
+    color: var(--bg-color);
+}
+
+.saits {
+    font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+        /* identical to box height, or 200% */
+    
+        letter-spacing: 0.06em;
+        color: var(--headers-text-color);
+}
+
+.link .text-sait {
+    font-size: 16px;
+    line-height: 1.9;
+    /* identical to box height, or 188% */
+
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
