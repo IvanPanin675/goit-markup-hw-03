@@ -13,18 +13,70 @@ body {
     background-color: var(--bg-color);
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
-    line-height: 1.4;
-    
+    line-height: 1.7;
+    letter-spacing: 0.03em;
 }
 
+h1,h2,h3,h4,h5,h6,p,ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
 
-/*header*/
+.conteiner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 
 .link {
     text-decoration: none;
 }
 
+.list {
+    list-style-type: none;
+}
+
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+
+.section:nth-child(4)
+ {
+    background-color: var(--sec-bg-color);
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    display: block; max-width: 100%; height: auto;
+}
+
+
+/*header*/
+
+.header-line {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header-conteiner {
+    display: flex;
+    align-items: center;
+    padding: 25px 15px;
+}
+
 .logo {
+    margin-right: 93px;
+
     color: var(--Logo-bt-link);
     font-family: 'Raleway';
     font-weight: 700;
@@ -37,31 +89,56 @@ body {
     color: black;
 }
 
-.list {
-    list-style-type: none;
+.item-nav:not(:first-child) {
+    margin-left: 50px;
 }
-.link.navi {
+
+.navi {
     color:var(--headers-text-color);
     font-weight: 500;
 }
- 
-.link.navi:hover,
-.link.navi:focus {
+
+.navi:hover,
+.navi:focus,
+.kont:hover,
+.kont:focus {
     color: var(--Logo-bt-link);
 }
-.link.navi:active {
+.navi:active {
     color: var(--Logo-bt-link);
 }
+
+.list.flex {
+    margin-left: auto;
+}
+
+.link.navi,
 .link.kont {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+
+.item-kont:not(:last-child) {
+    margin-right: 50px;
+}
+
+.kont {
     color: var(--primary-text-color);
     font-weight: 500;
 }
 
-.link.kont:hover,
-.link.kont:focus {
-    color: var(--Logo-bt-link);
-}
+.podzagolovok {
+    margin-bottom: 50px;
 
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: var(--headers-text-color);
+}
 
 /*main*/
     /*hero*/
@@ -72,10 +149,25 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    
     color: var(--bg-color);
+   
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
 }
 
 .btn {
+    display: block;
+    min-width: 200px;
+    padding: 8px 28px;
+    border-radius: 4px;
+    border-color: rgba(0, 0, 0, 0);
+    
+    margin-left: auto;
+    margin-right: auto; 
+
+    cursor: pointer;
     color: var(--bg-color);
     background-color: var(--Logo-bt-link);
     font-weight: 700;
@@ -88,55 +180,94 @@ body {
 .btn:hover,
 .btn:focus {
     background-color: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+    /*особености*/
+
+.item-osob {
+    width: 270px;
+}
+
+.item-osob:not(:first-child) {
+    margin-left: 30px;
 }
 
 .osobenost {
+    margin-bottom: 10px;
+    
     font-weight: 700;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
     color: var(--headers-text-color);
 }
  
 .osobenost-text {
     font-weight: 400;
-        font-size: 14px;
-        line-height: 1.7;
-        letter-spacing: 0.03em;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
 }
 
-.podzagolovok {
-    font-weight: 700;
-        font-size: 36px;
-        line-height: 1.2;
-        text-align: center;
-        letter-spacing: 0.03em;
-        color: var(--headers-text-color);
+.nopad {
+    padding-bottom: 0;
 }
 
-.team {
+/*чем ми занимаемся*/
+
+.item-what:not(:first-child) {
+    margin-left: 30px;
+}
+
+/*команда*/
+
+.item-team {
+    background-color: var(--bg-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    padding-bottom: 30px;
+}
+
+.item-team:not(:first-child) {
+    margin-left: 30px;
+}
+
+.team-div {
+    margin-top: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.teamer {
     font-weight: 500;
-        font-size: 16px;
-        line-height: 1.2;
-        text-align: center;
-        letter-spacing: 0.03em;
-        color: var(--headers-text-color);
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+   
+    color: var(--headers-text-color);
 }
 
 .prof {
-    
-        font-size: 16px;
-        line-height: 1.2;
-        text-align: center;
-        letter-spacing: 0.03em;
+    margin-top: 10px;
+
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
 }
+
 
 /* footer*/
 
 .footer {
-    background-color: var(--footer-bg);
+    padding-top: 60px;
+    padding-bottom: 60px;
 
+    background-color: var(--footer-bg);
 }
 
 .logo .white {
@@ -144,11 +275,15 @@ body {
 }
 
 .addr {
+    margin-top: 20px;
+
     font-style: normal;
+    
     color:#ffffff;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
+}
+
+.item-addr {
+    margin-top: 9px;
 }
 
 .link.addr {
@@ -159,25 +294,48 @@ body {
 
 /*для портфолiо сторiнки*/
 
+.item-btn:not(:first-child) {
+    margin-left: 8px;
+}
+
 .btn.port {
+    padding: 6px 22px;
+    min-width: 0;
+
     color: var(--headers-text-color);
+    
     background-color: var(--sec-bg-color);
+
     font-family: inherit;
     font-weight: 500;
-        font-size: 16px;
-        line-height: 1.6;
-        /* identical to box height, or 162% */
-    
-        text-align: center;
-        letter-spacing: 0.03em;
-
-
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
 }
 
 .btn.port:hover,
 .btn.port:focus {
     background-color: var(--Logo-bt-link);
     color: var(--bg-color);
+}
+
+.wrap {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; 
+}
+
+.item-sait {
+    
+}
+
+.block-saits {
+    padding: 20px 24px;
+
+    border: 1px solid #EEEEEE;
+    border-top: 0;
 }
 
 .saits {
@@ -191,10 +349,29 @@ body {
 }
 
 .link .text-sait {
+    margin-top: 4px;
+
     font-size: 16px;
     line-height: 1.9;
     /* identical to box height, or 188% */
 
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
+}
+
+
+
+
+/*прячем то что не нужно*/
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
