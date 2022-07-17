@@ -68,6 +68,10 @@ img {
     border-bottom: 1px solid #ECECEC;
 }
 
+.link.current {
+    color: var(--Logo-bt-link);
+}
+
 .header-conteiner {
     display: flex;
     align-items: center;
