@@ -66,6 +66,7 @@ img {
 
 .header-line {
     border-bottom: 1px solid #ECECEC;
+    padding: 25px 15px;
 }
 
 .link.current {
@@ -75,11 +76,11 @@ img {
 .header-conteiner {
     display: flex;
     align-items: center;
-    padding: 25px 15px;
+    
 }
 
 .logo {
-    margin-right: 93px;
+    
 
     color: var(--Logo-bt-link);
     font-family: 'Raleway';
@@ -87,6 +88,10 @@ img {
     font-size: 26px;
     line-height: 1.2;
     
+}
+
+.header-conteiner .logo {
+    margin-right: 93px;
 }
 
 .logo .black {
@@ -146,6 +151,11 @@ img {
 
 /*main*/
     /*hero*/
+
+.section-hero {
+    padding: 200px 0;
+}
+
 .hero {
     font-weight: 900;
     font-size: 44px;
@@ -156,6 +166,7 @@ img {
     
     color: var(--bg-color);
    
+    width: 696px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
@@ -232,7 +243,6 @@ img {
     background-color: var(--bg-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    padding-bottom: 30px;
 }
 
 .item-team:not(:first-child) {
@@ -241,6 +251,7 @@ img {
 
 .team-div {
     margin-top: 30px;
+    margin-bottom: 30px;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -280,13 +291,17 @@ img {
 
 .addr {
     margin-top: 20px;
-
+    
     font-style: normal;
     
     color:#ffffff;
 }
 
-.item-addr {
+.addr > .list {
+    margin-top: 9px;
+}
+
+.item-addr:not(:first-child) {
     margin-top: 9px;
 }
 
